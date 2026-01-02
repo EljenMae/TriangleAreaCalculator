@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-The **Triangle Area Calculator** is a simple Java application that calculates the area of a triangle using user-provided base and height values. This project is designed for beginners to understand basic Java concepts such as input handling, variables, arithmetic operations, and console output.
+The **Triangle Area Calculator** is a simple Java application that calculates the area of a triangle using user-provided width and height values. This project is designed for beginners to understand basic Java concepts such as input handling, variables, arithmetic operations, and console output.
 
 ## 🧮 Formula Used
 
@@ -39,7 +39,7 @@ TriangleAreaCalculator/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/triangle-area-calculator.git
+   gh repo clone EljenMae/TriangleAreaCalculator
    ```
 
 2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
