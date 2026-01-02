@@ -9,7 +9,7 @@ The **Triangle Area Calculator** is a simple Java application that calculates th
 The program uses the standard mathematical formula:
 
 ```
-Area = (base × height) / 2
+Area = width × height * 0.5
 ```
 
 ## 🚀 Features
