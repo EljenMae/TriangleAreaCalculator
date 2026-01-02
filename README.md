@@ -53,8 +53,9 @@ TriangleAreaCalculator/
 ## 🧑‍💻 Sample Input
 
 ```
-Enter the base of the triangle: 10
-Enter the height of the triangle: 5
+--Welcome to Basic Triangle Area Calculator--
+Enter width: 10
+Enter height: 5
 ```
 
 ## 📤 Sample Output
