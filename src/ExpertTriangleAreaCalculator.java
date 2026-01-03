@@ -43,22 +43,35 @@ public class ExpertTriangleAreaCalculator {
 
             }//end of case 1
             case 2: {
-                System.out.print("Case 2");
 
+                //Inputing values in this part
+                System.out.print("Side A: ");
+                double a = scanner.nextDouble();
+                System.out.print("Side B: ");
+                double b = scanner.nextDouble();
+                System.out.print("Side C: ");
+                double c = scanner.nextDouble();
+
+                double result1 = 0;
+
+                //Create a conditional for where the side b must be smaller than the sum of sides a and c.
+                if ( a<= 0 || b <=0 || c<=0){
+                    System.out.print("All sides must be greater than 0.");
+                } else if (b>=a+c) {
+                    System.out.print("Side B must be smaller than the sum of sides A and C");
+                }else {
+                    //Conditional for the calculations here if they are match
+                    result1 = 0.25 * Math.sqrt((a + b + c) * (-a + b + c) * (a - b + c) * (a + b - c));
+
+                    //Result
+                    System.out.print("Getting the area: " + result1);
+                }//ending of conditional formula here
                 break;
             }//End of case 2
 
             default: //if no matches
                 System.out.println("Please, choose the number of your choices.");
         }
-
-
-
-
-
-
-
-
         scanner.close();
     }
 }
