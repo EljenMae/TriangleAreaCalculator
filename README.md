@@ -1,107 +1,103 @@
-🔺 Triangle Area Calculator (Java)
-📌 Project Overview
+# 🔺 Triangle Area Calculator (Java)
 
-The Triangle Area Calculator is a Java console application designed to help learners progress from basic to expert-level Java concepts. The program calculates the area of a triangle using user-provided width (base) and height, while gradually introducing better logic, validation, and control structures.
+## 📌 Project Overview
 
-This repository contains three versions of the calculator:
+The **Triangle Area Calculator** is a Java console application designed to help learners progress from **basic to expert-level Java concepts**.  
+The program calculates the area of a triangle using user-provided **width (base)** and **height**, while gradually introducing better logic, validation, and control structures.
 
-Basic Version – formula calculation only
-Intermediate Version – input validation using if-else and logical OR (||)
-Expert Version – uses switch-case for menu-based control flow
+This repository contains **three versions** of the calculator:
 
-🧮 Formula Used
+- **Basic Version** – formula calculation only
+- **Intermediate Version** – input validation using `if-else` and logical OR (`||`)
+- **Expert Version** – menu-based control flow using `switch-case`
+
+---
+
+## 🧮 Formula Used
 
 All versions use the standard triangle area formula:
 
-Area = (width × height) × 0.5
 
-🚀 Features
-✅ Basic Version
+---
 
-Accepts user input for width and height
+## 🚀 Features
 
-Calculates the triangle area
+### ✅ Basic Version
+- Accepts user input for width and height
+- Calculates the triangle area
+- Displays the result in the console
+- Focuses on basic Java syntax
 
-Displays the result in the console
+### ✅ Intermediate Version
+- Uses `if-else` statements
+- Validates user input
+- Prevents calculation if **width OR height equals 0**
+- Displays error messages for invalid input
 
-Focuses on basic Java syntax
+### ✅ Expert Version
+- Uses a menu-driven system
+- Implements `switch-case` statements
+- Allows users to choose actions (calculate area, exit)
+- Demonstrates structured program flow
+- More scalable and maintainable logic
 
-✅ Intermediate Version
+---
 
-Uses if-else statements
+## 🛠️ Technologies Used
+- Java
+- IntelliJ IDEA (or any Java IDE)
+- Command Line Interface (CLI)
 
-Validates user input
+---
 
-Prevents calculation if width OR height equals 0
-
-Displays error messages for invalid input
-
-✅ Expert Version
-
-Uses a menu-driven system
-
-Implements switch-case statements
-
-Allows users to choose actions (e.g., calculate area, exit)
-
-Demonstrates structured program flow
-
-More scalable and maintainable logic
-
-🛠️ Technologies Used
-
-Java
-
-IntelliJ IDEA (or any Java IDE)
-
-Command Line Interface (CLI)
-
-📂 Project Structure
+## 📂 Project Structure
 TriangleAreaCalculator/
 │── src/
-│   ├── TriangleAreaCalculator.java
-│   ├── IntermediateTriangleAreaCalculator.java
-│   └── ExpertTriangleAreaCalculator.java
+│ ├── TriangleAreaCalculator.java
+│ ├── IntermediateTriangleAreaCalculator.java
+│ └── ExpertTriangleAreaCalculator.java
 │── README.md
 
-▶️ How to Run the Program
 
-Clone the repository:
+---
 
+## ▶️ How to Run the Program
+
+### 1️⃣ Clone the repository
+```bash
 gh repo clone EljenMae/TriangleAreaCalculator
 
+## 2️⃣ Open the project
 
-Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
+- Open the project in your preferred Java IDE (e.g., IntelliJ IDEA)
 
-Navigate to the src folder.
+- Navigate to the src folder
 
-Run one of the following files:
+## 3️⃣ Run a version
 
-TriangleAreaCalculator.java → Basic
-
-IntermediateTriangleAreaCalculator.java → Intermediate
-
-ExpertTriangleAreaCalculator.java → Expert
+- TriangleAreaCalculator.java → Basic
+- IntermediateTriangleAreaCalculator.java → Intermediate
+- ExpertTriangleAreaCalculator.java → Expert
 
 Follow the on-screen instructions.
 
-🧑‍💻 Sample Input (Basic Version)
+## 🧑‍💻 Sample Input (Basic Version)
 -- Welcome to Basic Triangle Area Calculator --
 Enter width: 10
 Enter height: 5
 
-📤 Sample Output (Basic Version)
+## 📤 Sample Output (Basic Version)
 The area of the triangle is: 25.0
 
-⚠️ Input Validation (Intermediate Version)
+## ⚠️ Input Validation (Intermediate Version)
 
 The IntermediateTriangleAreaCalculator validates input using an if-else statement with the logical OR (||) operator.
 
-Validation Rule
+## 🔎 Validation Rule
 
 If width == 0 OR height == 0, the calculation is stopped.
 
-Example Logic
+## 💡 Example Logic
 if (width == 0 || height == 0) {
     System.out.println("Width or height cannot be zero.");
 } else {
@@ -109,15 +105,15 @@ if (width == 0 || height == 0) {
     System.out.println("The area of the triangle is: " + area);
 }
 
-🧠 Expert Version (Using switch-case)
+## 🧠 Expert Version (Using switch-case)
 
 The ExpertTriangleAreaCalculator uses a menu-based approach controlled by a switch-case statement.
 
-Example Menu
+## 📋 Example Menu
 1. Calculate Triangle Area
 2. Exit
 
-Example Logic
+## 🧩 Example Logic
 switch (choice) {
     case 1:
         // ask for width and height
@@ -130,46 +126,32 @@ switch (choice) {
         System.out.println("Invalid choice.");
 }
 
-What This Teaches
+## 📘 What This Teaches
 
-How switch-case works
+- How switch-case works
+- Better program structure
+- How to build scalable console applications
+- Cleaner control flow compared to multiple if-else blocks
 
-Better program structure
+## 📚 Learning Objectives
 
-How to build scalable console applications
+- Use Scanner for user input
+- Apply arithmetic operations
+- Use if-else statements
+- Apply logical OR (||) for validation
+- Implement switch-case for menu systems
+- Write clean and readable Java code
+- Understand program flow from beginner to expert level
 
-Cleaner control flow compared to multiple if-else blocks
+## ✅ Future Improvements
+- Validate negative numbers
+- Support decimal input using double
+- Loop menus using while
+- Add exception handling (try-catch)
+- Create a GUI version using JavaFX or Swing
 
-📚 Learning Objectives
-
-Use Scanner for user input
-
-Apply arithmetic operations
-
-Use if-else statements
-
-Apply logical OR (||) for validation
-
-Implement switch-case for menu systems
-
-Write clean and readable Java code
-
-Understand program flow from beginner to expert level
-
-✅ Future Improvements
-
-Validate negative numbers
-
-Support decimal input using double
-
-Loop menus using while
-
-Add exception handling (try-catch)
-
-Create a GUI version using JavaFX or Swing
-
-📄 License
+## 📄 License
 
 This project is created for educational purposes and is free to use, modify, and improve.
 
-⭐ Feel free to fork this repository, explore each version, and enhance the project as you learn more Java!
+⭐ Feel free to fork this repository, explore each version, and enhance the project as you continue learning Java!
