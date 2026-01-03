@@ -51,13 +51,13 @@ All versions use the standard triangle area formula:
 ---
 
 ## 📂 Project Structure
+---
 TriangleAreaCalculator/
 │── src/
 │ ├── TriangleAreaCalculator.java
 │ ├── IntermediateTriangleAreaCalculator.java
 │ └── ExpertTriangleAreaCalculator.java
 │── README.md
-
 
 ---
 
@@ -66,19 +66,16 @@ TriangleAreaCalculator/
 ### 1️⃣ Clone the repository
 ```bash
 gh repo clone EljenMae/TriangleAreaCalculator
+```
 
 ## 2️⃣ Open the project
-
 - Open the project in your preferred Java IDE (e.g., IntelliJ IDEA)
-
 - Navigate to the src folder
 
 ## 3️⃣ Run a version
-
 - TriangleAreaCalculator.java → Basic
 - IntermediateTriangleAreaCalculator.java → Intermediate
 - ExpertTriangleAreaCalculator.java → Expert
-
 Follow the on-screen instructions.
 
 ## 🧑‍💻 Sample Input (Basic Version)
@@ -90,11 +87,9 @@ Enter height: 5
 The area of the triangle is: 25.0
 
 ## ⚠️ Input Validation (Intermediate Version)
-
 The IntermediateTriangleAreaCalculator validates input using an if-else statement with the logical OR (||) operator.
 
 ## 🔎 Validation Rule
-
 If width == 0 OR height == 0, the calculation is stopped.
 
 ## 💡 Example Logic
@@ -106,7 +101,6 @@ if (width == 0 || height == 0) {
 }
 
 ## 🧠 Expert Version (Using switch-case)
-
 The ExpertTriangleAreaCalculator uses a menu-based approach controlled by a switch-case statement.
 
 ## 📋 Example Menu
@@ -127,14 +121,12 @@ switch (choice) {
 }
 
 ## 📘 What This Teaches
-
 - How switch-case works
 - Better program structure
 - How to build scalable console applications
 - Cleaner control flow compared to multiple if-else blocks
 
 ## 📚 Learning Objectives
-
 - Use Scanner for user input
 - Apply arithmetic operations
 - Use if-else statements
@@ -151,7 +143,6 @@ switch (choice) {
 - Create a GUI version using JavaFX or Swing
 
 ## 📄 License
-
 This project is created for educational purposes and is free to use, modify, and improve.
 
 ⭐ Feel free to fork this repository, explore each version, and enhance the project as you continue learning Java!
