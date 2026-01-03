@@ -88,10 +88,36 @@ public class ExpertTriangleAreaCalculator {
                 double angleY = scanner.nextDouble();
 
                 System.out.print("Side B: ");
-                double b = scanner.
+                double b = scanner.nextDouble();
 
+                System.out.print("Area: ");
+                double area = scanner.nextDouble();
+
+                // Here lies the calculation
+                if (a == 0 && b != 0 && angleY != 0) { //and condition for the every is true here that are not all is not to 0.
+                    // Solve for a
+                    result = (2 * area) / (b * Math.sin(angleY));
+
+                } else if (b == 0 && a != 0 && angleY != 0) {
+                    // Solve for b
+                    result = (2 * area) / (a * Math.sin(angleY));
+
+                } else if (angleY == 0 && a != 0 && b != 0) {
+                    // Solve for sin(angleY)
+                    result = (2 * area) / (a * b);
+
+                } else {
+                    result = 0.5 * a * b * Math.sin(angleY);
+                }
+                //Showing the result
+                System.out.println("Result: " + result);
                 break;
             }//end of case 3
+
+            case 4: {
+                System.out.println("Two angles + side between (ASA)");
+                break;
+            }//end of case 4
 
             default: //if no matches
                 System.out.println("Please, choose the number of your choices.");
