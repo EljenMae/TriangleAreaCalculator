@@ -80,8 +80,8 @@ Follow the on-screen instructions.
 
 ## 🧑‍💻 Sample Input (Basic Version)
 -- Welcome to Basic Triangle Area Calculator --
-Enter width: 10
-Enter height: 5
+- Enter width: 10
+- Enter height: 5
 
 ## 📤 Sample Output (Basic Version)
 The area of the triangle is: 25.0
