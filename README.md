@@ -1,86 +1,177 @@
-# Triangle Area Calculator (Java)
+🔺 Triangle Area Calculator (Java)
+📌 Project Overview
 
-## 📌 Project Overview
+The Triangle Area Calculator is a Java console application designed to help learners progress from basic to expert-level Java concepts. The program calculates the area of a triangle using user-provided width (base) and height, while gradually introducing better logic, validation, and control structures.
 
-The **Triangle Area Calculator** is a simple Java application that calculates the area of a triangle using user-provided width and height values. This project is designed for beginners to understand basic Java concepts such as input handling, variables, arithmetic operations, and console output.
+This repository contains three versions of the calculator:
 
-## 🧮 Formula Used
+Basic Version – formula calculation only
 
-The program uses the standard mathematical formula:
+Intermediate Version – input validation using if-else and logical OR (||)
 
-```
-Area = width × height * 0.5
-```
+Expert Version – uses switch-case for menu-based control flow
 
-## 🚀 Features
+🧮 Formula Used
 
-* Accepts user input for base and height
-* Calculates the area of a triangle accurately
-* Displays the result in the console
-* Simple and beginner-friendly Java code
+All versions use the standard triangle area formula:
 
-## 🛠️ Technologies Used
+Area = (width × height) × 0.5
 
-* Java
-* IntelliJ IDEA / Any Java IDE
-* Command Line Interface (CLI)
+🚀 Features
+✅ Basic Version
 
-## 📂 Project Structure
+Accepts user input for width and height
 
-```
+Calculates the triangle area
+
+Displays the result in the console
+
+Focuses on basic Java syntax
+
+✅ Intermediate Version
+
+Uses if-else statements
+
+Validates user input
+
+Prevents calculation if width OR height equals 0
+
+Displays error messages for invalid input
+
+✅ Expert Version
+
+Uses a menu-driven system
+
+Implements switch-case statements
+
+Allows users to choose actions (e.g., calculate area, exit)
+
+Demonstrates structured program flow
+
+More scalable and maintainable logic
+
+🛠️ Technologies Used
+
+Java
+
+IntelliJ IDEA (or any Java IDE)
+
+Command Line Interface (CLI)
+
+📂 Project Structure
 TriangleAreaCalculator/
 │── src/
-│   └── TriangleAreaCalculator.java
+│   ├── TriangleAreaCalculator.java
+│   ├── IntermediateTriangleAreaCalculator.java
+│   └── ExpertTriangleAreaCalculator.java
 │── README.md
-```
 
-## ▶️ How to Run the Program
+▶️ How to Run the Program
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   gh repo clone EljenMae/TriangleAreaCalculator
-   ```
+gh repo clone EljenMae/TriangleAreaCalculator
 
-2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
 
-3. Navigate to the `src` folder and open `TriangleAreaCalculator.java`.
+Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
 
-4. Run the program.
+Navigate to the src folder.
 
-5. Enter the base and height when prompted.
+Run one of the following files:
 
-## 🧑‍💻 Sample Input
+TriangleAreaCalculator.java → Basic
 
-```
---Welcome to Basic Triangle Area Calculator--
+IntermediateTriangleAreaCalculator.java → Intermediate
+
+ExpertTriangleAreaCalculator.java → Expert
+
+Follow the on-screen instructions.
+
+🧑‍💻 Sample Input (Basic Version)
+-- Welcome to Basic Triangle Area Calculator --
 Enter width: 10
 Enter height: 5
-```
 
-## 📤 Sample Output
-
-```
+📤 Sample Output (Basic Version)
 The area of the triangle is: 25.0
-```
 
-## 📚 Learning Objectives
+⚠️ Input Validation (Intermediate Version)
 
-* Understand Java input using `Scanner`
-* Perform basic arithmetic operations
-* Apply mathematical formulas in code
-* Practice clean and readable Java syntax
+The IntermediateTriangleAreaCalculator validates input using an if-else statement with the logical OR (||) operator.
 
-## ✅ Future Improvements
+Validation Rule
 
-* Input validation for negative numbers
-* Support for decimal inputs
-* GUI version using JavaFX or Swing
+If width == 0 OR height == 0, the calculation is stopped.
 
-## 📄 License
+Example Logic
+if (width == 0 || height == 0) {
+    System.out.println("Width or height cannot be zero.");
+} else {
+    double area = (width * height) * 0.5;
+    System.out.println("The area of the triangle is: " + area);
+}
 
-This project is for educational purposes and is free to use and modify.
+🧠 Expert Version (Using switch-case)
 
----
+The ExpertTriangleAreaCalculator uses a menu-based approach controlled by a switch-case statement.
 
-⭐ Feel free to fork this repository and improve the project!
+Example Menu
+1. Calculate Triangle Area
+2. Exit
+
+Example Logic
+switch (choice) {
+    case 1:
+        // ask for width and height
+        // calculate and display area
+        break;
+    case 2:
+        System.out.println("Exiting program...");
+        break;
+    default:
+        System.out.println("Invalid choice.");
+}
+
+What This Teaches
+
+How switch-case works
+
+Better program structure
+
+How to build scalable console applications
+
+Cleaner control flow compared to multiple if-else blocks
+
+📚 Learning Objectives
+
+Use Scanner for user input
+
+Apply arithmetic operations
+
+Use if-else statements
+
+Apply logical OR (||) for validation
+
+Implement switch-case for menu systems
+
+Write clean and readable Java code
+
+Understand program flow from beginner to expert level
+
+✅ Future Improvements
+
+Validate negative numbers
+
+Support decimal input using double
+
+Loop menus using while
+
+Add exception handling (try-catch)
+
+Create a GUI version using JavaFX or Swing
+
+📄 License
+
+This project is created for educational purposes and is free to use, modify, and improve.
+
+⭐ Feel free to fork this repository, explore each version, and enhance the project as you learn more Java!
