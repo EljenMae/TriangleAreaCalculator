@@ -1,17 +1,17 @@
-🔺 Triangle Area Calculator (Java)
-📌 Project Overview
+#🔺 Triangle Area Calculator (Java)
+##📌 Project Overview
 
 The Triangle Area Calculator is a Java console application designed to help learners progress from basic to expert-level Java concepts. The program calculates the area of a triangle using user-provided width (base) and height, while gradually introducing better logic, validation, and control structures.
 
 This repository contains three versions of the calculator:
 
-Basic Version – formula calculation only
+- Basic Version – formula calculation only
 
-Intermediate Version – input validation using if-else and logical OR (||)
+- Intermediate Version – input validation using if-else and logical OR (||)
 
-Expert Version – uses switch-case for menu-based control flow
+ - Expert Version – uses switch-case for menu-based control flow
 
-🧮 Formula Used
+##🧮 Formula Used
 
 All versions use the standard triangle area formula:
 
