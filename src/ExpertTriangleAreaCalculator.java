@@ -18,6 +18,8 @@ public class ExpertTriangleAreaCalculator {
         switch (choices){
             case 1:{
 
+                System.out.println("Base and height");
+
                 double result;
 
                 System.out.print("Width: ");
@@ -44,15 +46,19 @@ public class ExpertTriangleAreaCalculator {
             }//end of case 1
             case 2: {
 
+                double result1;
+
+                System.out.println("Three sides (SSS)");
+
                 //Inputing values in this part
                 System.out.print("Side A: ");
                 double a = scanner.nextDouble();
+
                 System.out.print("Side B: ");
                 double b = scanner.nextDouble();
+
                 System.out.print("Side C: ");
                 double c = scanner.nextDouble();
-
-                double result1 = 0;
 
                 //Create a conditional for where the side b must be smaller than the sum of sides a and c.
                 if ( a<= 0 || b <=0 || c<=0){
@@ -68,6 +74,24 @@ public class ExpertTriangleAreaCalculator {
                 }//ending of conditional formula here
                 break;
             }//End of case 2
+
+            case 3: {
+
+                double result;
+
+                System.out.println("Two sides + angle between (SAS)");
+
+                System.out.print("Side A: ");
+                double a = scanner.nextDouble();
+
+                System.out.print("Angle Y: ");
+                double angleY = scanner.nextDouble();
+
+                System.out.print("Side B: ");
+                double b = scanner.
+
+                break;
+            }//end of case 3
 
             default: //if no matches
                 System.out.println("Please, choose the number of your choices.");
